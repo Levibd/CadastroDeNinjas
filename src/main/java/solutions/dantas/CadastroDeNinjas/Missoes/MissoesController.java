@@ -3,7 +3,7 @@ package solutions.dantas.CadastroDeNinjas.Missoes;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/ninjas")
+@RequestMapping("/missões")
 public class MissoesController {
 
     @GetMapping("/listar")
