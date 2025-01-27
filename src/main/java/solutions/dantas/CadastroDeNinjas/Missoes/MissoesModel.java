@@ -1,5 +1,6 @@
 package solutions.dantas.CadastroDeNinjas.Missoes;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +24,7 @@ public class MissoesModel {
     private String rank;
 
 
+    @JsonIgnore
     @OneToMany(mappedBy = "missoes")
     private List<NinjaModel> ninja;
 
